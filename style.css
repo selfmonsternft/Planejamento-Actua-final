@@ -1,0 +1,37 @@
+/* style.css */
+
+/* Melhora a aparência geral da fonte */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Adiciona um card sutil em volta dos componentes principais */
+div[data-testid="stAppViewContainer"] > .main > div > div {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Estilo para os botões principais */
+div.stButton > button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #0056b3;
+    transition: all 0.1s ease-in-out;
+}
+
+div.stButton > button:hover {
+    background-color: #0069d9;
+    transform: translateY(-2px);
+    border-bottom: 5px solid #0056b3;
+}
+
+/* Melhora a aparência dos cabeçalhos das abas */
+div[data-baseweb="tab-list"] {
+    justify-content: center;
+}
